@@ -1,0 +1,119 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 740px;
+    background: rgb(172, 212, 198);
+}
+
+.mainContainer{
+    width: 410px;
+    height: 500px;
+    background: rgb(39, 39, 39);
+    border: 12px solid rgb(29, 27, 27);
+    border-radius: 8px;
+    box-shadow: 8px 8px rgb(56, 56, 56);
+}
+
+.operandContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+    height: 400px;
+    align-content: center;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.operatorContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 400px;
+    align-content: flex-start;
+}
+
+.operand, .dot{
+    width: 90px;
+    height: 80px;
+    background: rgb(100, 47, 234);
+    box-shadow: 4px 4px rgb(49, 10, 148);
+    border: none;
+    align-self: center;
+    border-radius: 16px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.operand:active, .dot:active, .del:active, .clear:active, .operator:active, .equal:active{
+    transform: scale(1.03);
+}
+
+.operand:hover, .dot:hover{
+    background: rgb(88, 37, 217);
+}
+
+.operator, .equal, .del, .clear{
+    width: 80px;
+    height: 80px;
+    background: rgb(234, 181, 47);
+    justify-self: flex-end;
+    border-radius: 16px;
+    box-shadow: 4px 4px rgb(188, 145, 34);
+    font-size: 36px;
+    font-weight: bold;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.operator:hover, .del:hover, .clear:hover{
+    background: rgb(211, 163, 41);
+}
+
+.display{
+    width: 380px;
+    height: 100px;
+    font-size: 64px;
+    text-align: end;
+    color: white;
+}
+
+#zero{
+    width: 180px;
+}
+
+#clear, #del{
+    width: 135px;
+    font-size: 30px;
+}
+
+.displayOperator{
+    width: 30px;
+    height: 100px;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    padding-left: 16px;
+}
+
+.displayContainer{
+    display: flex;
+    background: rgba(73, 73, 73, 0.274);
+    border-radius: 0px 0px 16px 16px;
+    border: 2px solid black;
+}
+
+#equal {
+    background: rgb(41, 210, 41);
+    box-shadow: 4px 4px rgb(29, 161, 29);
+}
+
+#equal:hover{
+    background: rgb(37, 192, 37);
+}
